@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Teleport
+Portal for telephone numbers on the go!
+
+SIAGC = Sign In And Get Connected with the world!!
+>>>>>>> 5bdda5aa4f30310d1988c15446037c1b84d16a7c
