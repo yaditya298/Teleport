@@ -1,0 +1,5 @@
+- if @status
+  | var html = "<div class='alert alert-success'>Congrats #{@user&.name}! Now you are the owner of contact number <strong>#{@contact&.to_dashed}</strong></div>";
+- else
+  | var html = "<div class='alert alert-warning'>Uh-oh! The number you requested is not available. But teleport has provided you with this contact number <strong>#{@contact&.to_dashed}</strong></div>";
+| $('#checked_number').html(html);

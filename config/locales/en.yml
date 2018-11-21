@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  contacts:
+    success: "Your contact number is %{number}"
+    enter_name: 'Please Enter your name: '
+    enter_number: Enter Contact Number(%{number_length} digits)
+  shared:
+    working: 'Working...'

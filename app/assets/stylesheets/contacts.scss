@@ -1,0 +1,24 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.workspace {
+  top: 20%;
+  position: absolute;
+}
+
+#number, #checked_number {
+  margin-top: 10px;
+}
+
+.navbar-inverse {
+  background-color: white !important;
+  border-bottom: 5px solid red !important;
+}
+
+.navbar-inverse .navbar-brand {
+  color: black !important;
+  font-weight: bolder;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 30px
+}

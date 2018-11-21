@@ -1,0 +1,17 @@
+.workspace
+  h2 Fancy Number
+  hr
+  p = 'Lets try the luck factor'
+  = form_for :user, url: check_number_path, remote: true do |f|
+    = f.label I18n.t('contacts.enter_name')
+    br
+    = f.text_field :name
+    br
+    = f.label I18n.t('contacts.enter_number', number_length: ContactNumber::CONTACT_LENGTH)
+    br
+    = f.text_field :number, 'data-number-length': ContactNumber::CONTACT_LENGTH, onKeyPress: "if(this.value.length== #{ContactNumber::CONTACT_LENGTH}) return false;", min:"0", onkeydown:"javascript: return event.keyCode == 69 || event.keyCode == 190 || event.keyCode == 189 ? false : true"
+    hr
+    = f.submit 'Check', class: 'btn btn-primary check-btn', disabled: true, 'data-disable-with': I18n.t('shared.working')
+    |  | 
+    = link_to :back, :back
+  #checked_number
